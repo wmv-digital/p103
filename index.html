@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+    var userAgent = navigator.userAgent;
+
+    // Verifica se o agente do usuário corresponde a um bot.
+    if (!userAgent.match(/Googlebot|MetaURI|TikTokBot/i)) {
+        // Função para verificar se o dispositivo é móvel.
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+        }
+
+        // Função para obter a localização geográfica do usuário.
+        function getGeolocation(callback) {
+            fetch('https://ipapi.co/json/')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    callback(data);
+                })
+                .catch(function(error) {
+                    console.error('Erro ao obter geolocalização:', error);
+                    callback(null);
+                });
+        }
+
+        // Verifica se o dispositivo é móvel e se a localização é nos Estados Unidos.
+        if (isMobile()) {
+            getGeolocation(function(location) {
+                if (location && location.country_code === 'US') {
+                    window.location.href = "https://bill101521.github.io/endop/";
+                }
+            });
+        }
+    }
+</script>
+	<script>
+  const productRedirects = {
+    "https://cooltip.shop/endopeak": "https://endopeak24.com/b/order-now.php?aff_id=115043"
+  };
+
+  // Obtém a URL atual
+  const currentUrl = new URL(window.location.href);
+  const baseUrl = currentUrl.protocol + "//" + currentUrl.host + currentUrl.pathname;
+  const backRedirectLink = productRedirects[baseUrl];
+
+  // Verifica se a URL atual está no mapeamento
+  if (backRedirectLink) {
+    // Adiciona entradas no histórico do navegador para disparar o evento popstate
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+
+    // Adiciona um ouvinte de evento para o evento popstate
+    window.addEventListener('popstate', function(event) {
+      if (event.state) {
+        // Redireciona para a URL de desconto
+        location.href = backRedirectLink;
+      }
+    }, false);
+
+    // Adiciona um ouvinte de evento para a visibilidade da página
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'hidden') {
+        // Redireciona para a URL de desconto
+        location.href = backRedirectLink;
+      }
+    });
+
+    // Adiciona um ouvinte de evento para o evento beforeunload
+    window.addEventListener('beforeunload', function(event) {
+      // Redireciona para a URL de desconto
+      location.href = backRedirectLink;
+      // Previne o comportamento padrão do evento
+      event.preventDefault();
+    });
+  }
+</script>
+
+
+    <style>.async-hide { opacity: 0 !important} </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+<!-- End Google Tag Manager -->
+
+<script>((c,l,u)=>{var r = ()=>Math.random()*100|0,m = /Mobi/i.test(window.navigator.userAgent),x = r(),cook = {s:(n, v, d = 60) => {document.cookie = `${n}=${v};expires=${(new Date(Date.now() + d * 864e5)).toUTCString()};path=/`;return v;},g:n => (v=document.cookie.split(`; ${n}=`)[1])?v.split(';')[0]:null},alg = {"split_equal":(v)=> r()%v.length,"mobile_desktop":(v)=> m?'mobile':'desktop'},e = (f)=>f.type=="mobile"&& m || f.type=="desktop"&&!m ||f.type=="all" || !f.type;for(var i in c)if(l.href.match(i) && e(c[i]) && x<=(c[i].traffic || 100) && (c[i].exclude?!l.href.match(c[i].exclude.join("|")):true)&& (c[i].only?l.href.match(c[i].only.join("|")):true)){var y = c[i].variations[cook.g(u) || cook.s(u, alg[c[i].alg || "split_equal"](c[i].variations))];l.href = y + (y.indexOf('?')<0? '?':'&')+l.search.substring(1);}})({"\/video.php":{"type":"all","variations":["video_yt.php?vtid=yout","video_vturb.php?vtid=vturb"],"only":["boldapex1"]}},window.location,"__split");</script>  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noimageindex, nofollow, nosnippet">
+  <meta name="description" content="LeanBliss - Video Presentation">
+  <title>Watch until the end - Video Presentation</title>
+  <link rel="icon" type="image/png" href="https://getleanbliss.com//statics/img/favicon.png">
+  
+  <style>
+    @font-face {
+  font-family: main-font;
+  src: url("https://getleanbliss.com//statics/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: bold-font;
+  src: url("https://getleanbliss.com//statics/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: bold-m-font;
+  src: url("https://getleanbliss.com//statics/fonts/ELMessiri-Bold.ttf");
+}
+
+@font-face {
+  font-family: roboto-bold-font;
+  src: url("https://getleanbliss.com//statics/fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: light-font;
+  src: url("https://getleanbliss.com//statics/fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: medium-font;
+  src: url("https://getleanbliss.com//statics/fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: semi-bold-font;
+  src: url("https://getleanbliss.com//statics/fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: caslon-font;
+  src: url("https://getleanbliss.com//statics/fonts/BigCaslon.ttf");
+}
+
+
+*{
+    --background-color:white;
+    --main-font-color:#272727;
+    --main-hover-color: grey;
+    --main-font-family: main-font, Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    /* font sizes */
+    --font-large: 2rem;
+    --font-medium: 1.5rem;
+    --font-normal: 1rem;
+    --font-small: 0.5rem;
+    
+    /* HDEADLINE */
+    --headline-color: var(--main-font-color);
+    
+    /* FOOTER colors*/
+    --footer-background-color: black;
+    --copywrite-background-color:#272727;
+    --footer-font-color:#272727;
+    --footer-hover-color:var(--main-hover-color);
+    
+    --accent-color-light:#00a536;
+    /* PRICE BOX */
+    --color-dark:#3d56b0;
+    --color-light:#2fb3c5;
+    
+} 
+</style>  <link rel="stylesheet" type="text/css" href="https://getleanbliss.com//statics/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://getleanbliss.com//statics/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://getleanbliss.com//statics/css/webfont.css">
+  
+  
+  <script src="https://getleanbliss.com//statics/js/statics_js.php?static=https://getleanbliss.com/"></script>
+  <script src="https://static.getleanbliss.com//statics/statics.js" baseurl="https://getleanbliss.com//"></script>
+  
+               <link rel="icon" type="image/png" href="https://getleanbliss.com//statics/img/favicon-notice.png">
+     
+</head>
+<body>
+        <div class=" video-bg">
+    <div class="py-lg-2 py-1"></div>
+    <div class="atf_wrapper">
+    <div class="container headline">
+	<div class="row">
+    	<div class="col-12 d-none d-lg-block">
+    		<h2 class="text-center text-white vsl-headline">
+    			<b>
+    				<svg viewBox="0 0 700 75">
+                      	<text x="50%" y="30" text-anchor="middle" fill="white" class="vsl-headline">​"​​Е​R​Е​С​Т​I​О​Ν​ ​М​U​Ѕ​С​L​Е​ ​Т​R​I​С​Κ" <tspan class="vsl-headline-accent">​G​Е​Т​Ѕ​ ​Υ​О​U​ ​Н​А​R​D​ ​I​Ν​ ​9​ ​Ѕ​Е​С​О​Ν​D​Ѕ</tspan> </text>
+                      	<text x="50%" y="64" text-anchor="middle" fill="white" class="vsl-headline"></text>
+                    </svg>
+                </b>
+    		</h2>
+    	</div>
+
+		<div class="col-12 d-block d-lg-none">
+    		<h2 class="text-center text-white vsl-headline">
+    			<b>
+    				<svg viewBox="0 0 550 125">
+                      	<text x="50%" y="30" text-anchor="middle" fill="white" class="vsl-headline">"​​Е​R​Е​С​Т​I​О​Ν​ ​М​U​Ѕ​С​L​Е​ ​Т​R​I​С​Κ"</text>
+                      	<text x="50%" y="70" text-anchor="middle" fill="white" class="vsl-headline"><tspan class="vsl-headline-accent">​G​Е​Т​Ѕ​ ​Υ​О​U​ ​Н​А​R​D​ ​I​Ν​ ​9​ ​Ѕ​Е​С​О​Ν​D​Ѕ</tspan></text>
+						<text x="50%" y="110" text-anchor="middle" fill="white" class="vsl-headline"></text>
+                    </svg>
+                </b>
+    		</h2>
+    	</div>
+	</div>
+</div>
+        <div class="container videobox">
+    <div id="vid_66a13c8e6f2cd2000a8cc505" style="position:relative;width:100%;padding: 176.47058823529412% 0 0;">
+        <img decoding="async" id="thumb_66a13c8e6f2cd2000a8cc505" src="https://images.converteai.net/1aab7678-e9ee-4543-a8b0-2ef57967c2f6/players/66a13c8e6f2cd2000a8cc505/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+        <div id="backdrop_66a13c8e6f2cd2000a8cc505" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+    </div>
+    <script type="text/javascript" id="scr_66a13c8e6f2cd2000a8cc505">
+        var s = document.createElement("script");
+        s.src = "https://scripts.converteai.net/1aab7678-e9ee-4543-a8b0-2ef57967c2f6/players/66a13c8e6f2cd2000a8cc505/player.js";
+        s.async = !0;
+        document.head.appendChild(s);
+    </script>
+    <script>
+        // Função para eventos personalizados e timers
+        function setupCustomEvents() {
+            // Função para mostrar elementos baseado em cookie
+            function checkCookieAndShow() {
+                var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)LUI\.return_visit\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+                if (cookieValue) {
+                    document.querySelector("#btn-cta").style.display = "block";
+                    document.querySelector("#vsltimer_host").style.display = "block";
+                    document.querySelector("#ordbtn_host").style.display = "block";
+                }
+            }
+
+            // Mostra elemento após 1674 segundos
+            setTimeout(function() {
+                document.querySelector("#btn-cta").style.display = "block";
+                document.querySelector("#vsltimer_host").style.display = "block";
+                document.querySelector("#ordbtn_host").style.display = "block";
+                // Adicione outras ações aqui se necessário
+            }, 1674000);
+
+            // Checa o cookie após 1 segundo
+            setTimeout(checkCookieAndShow, 1000);
+
+            // Evento de Google Analytics a cada 10 segundos
+            setInterval(function() {
+                // Substitua pelo seu código de evento do Google Analytics
+                console.log("Evento de Google Analytics");
+            }, 10000);
+        }
+
+        // Chama a função de configuração após o carregamento do script do player
+        s.onload = setupCustomEvents;
+    </script>
+</div>
+<style>
+    .elementor-element:has(#smartplayer) {
+        width: 100%;
+    }
+</style>
+
+
+</div>
+</div>            </div>
+    <div class="py-4"></div>
+</div>
+
+<span id="ordbtn_host"></span>
+
+    
+    <div class="main-cta" id="btn-cta">
+    <div class="text-dark bg-info">
+    <span id="vsltimer_host"></span>
+            <div class="triangle2-grey-ctr tg"></div>
+        </div>
+        <div class="py-5"></div>
+        <div class="container pricebox">
+   <div class="row">
+   <div class="col-lg-4 col-12 mb-3 col-lg-4 order-3 order-lg-0">
+   <div class="price-box left">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#92b3e1">1 X BOTTLE</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='1' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://endopeak24.com/assets/img/PRODx1.png" type="fe"  ""
+                  class="pricebox-m-product-img1 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://endopeak24.com/assets/img/PRODx1.png" type="fe"  ""
+                     class="pricebox-product-img1 d-none d-lg-block mx-auto img-fluid px-3">
+               </div>
+            
+               <div class="pt-lg-3"></div>
+               <img class="pricebox-price-img1 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://getleanbliss.com//statics/img/69.png">
+                  <div class="pt-lg-5"></div>
+                  <div class="pt-lg-3"></div>
+               <div class="py-1 py-lg-2"></div>
+               <a href="https://www.buygoods.com/secure/checkout.html?sessid2=sessid20240625145046052&aff_id=115043&account_id=8288&product_codename=EPK01&redirect=aHR0cHM6Ly9lbmRvcGVhazI0LmNvbS9iL3UxLnYuMTMyLnBocA==&vid1=eyJpZCI6IjIyOTE3MTkzMzY2Mzg4NTcifQ==&vid2=eyJob3N0IjoiZW5kb3BlYWsyNC5jb20iLCJwYWdlIjoiYlwvb3JkZXItbm93LnBocCJ9"   class="mb-1 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://getleanbliss.com//statics/img/buy-now.png"  
+                  class="buy-button1 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='1' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='1' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://getleanbliss.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info small-shipping text-center medium mb-0 mb-lg-5">+ Small Shipping Fee </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+      <div class="col-lg-4 col-12 mb-3 col-lg-4 order-lg-2 highlighted">
+   <div class="price-box middle">
+      <div class="row pt-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-3 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">6 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='3' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://endopeak24.com/assets/img/PRODx6.png" type="fe"  ""
+                  class="pricebox-m-product-img6 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://endopeak24.com/assets/img/PRODx6.png" type="fe"  ""
+                     class="pricebox-product-img6 d-none d-lg-block mx-auto img-fluid  mt-2 mt-lg-2 px-3">
+               </div>
+               <div class="py-lg-3"></div>   
+               <div class="pt-lg-1"></div>
+               <img class="pricebox-price-img6 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://getleanbliss.com//statics/img/49.png">
+               <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://getleanbliss.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://www.buygoods.com/secure/checkout.html?sessid2=sessid20240625145046052&aff_id=115043&account_id=8288&product_codename=EPK06&redirect=aHR0cHM6Ly9lbmRvcGVhazI0LmNvbS9iL3UxLnBocA==&vid1=eyJpZCI6IjIyOTE3MTkzMzY2Mzg4NTcifQ==&vid2=eyJob3N0IjoiZW5kb3BlYWsyNC5jb20iLCJwYWdlIjoiYlwvb3JkZXItbm93LnBocCJ9"   class="mb-3 mx-auto add_view d-block " ><img
+                  src="https://getleanbliss.com//statics/img/buy-now2.png"  
+                  class="buy-button6 img-fluid d-block pl-lg-2 mx-auto " alt=""></a>
+               <div class="center card-section py-0 py-lg-2">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='3' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='3' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://getleanbliss.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+     <div class="col-lg-4 col-12 mb-3 col-lg-4 order-2 order-lg-3">
+   <div class="price-box right">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+            <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">3 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='2' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-0"></div>
+               <img src="https://endopeak24.com/assets/img/PRODx3.png" type="fe"  ""
+                  class="pricebox-m-product-img3 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://endopeak24.com/assets/img/PRODx3.png" type="fe"  ""
+                     class="pricebox-product-img3 d-none d-lg-block mx-auto  img-fluid pl-2 px-2">
+               </div>
+            
+               <div class="py-lg-3"></div>   
+               <img class="pricebox-price-img3 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://getleanbliss.com//statics/img/59.png">
+                  <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://getleanbliss.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://www.buygoods.com/secure/checkout.html?sessid2=sessid20240625145046052&aff_id=115043&account_id=8288&product_codename=EPK03&redirect=aHR0cHM6Ly9lbmRvcGVhazI0LmNvbS9iL3UxLnBocA==&vid1=eyJpZCI6IjIyOTE3MTkzMzY2Mzg4NTcifQ==&vid2=eyJob3N0IjoiZW5kb3BlYWsyNC5jb20iLCJwYWdlIjoiYlwvb3JkZXItbm93LnBocCJ9"   class="mb-2 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://getleanbliss.com//statics/img/buy-now.png"  
+                  class="buy-button3 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='2' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='2' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://getleanbliss.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+</div>        <div class="pt-1"></div>
+        <div class="bg-white">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="container">
+                    <p class="bigger text-center  mb-0">
+                        <b>Our customers say</b>
+                    </p>
+                    <img src="https://getleanbliss.com//statics/img/stars2.png" class="img-fluid d-block mx-auto py-2"
+                        style="max-width:245px;">
+                        <p class="bigger text-center">
+                     based on <b>11,369 reviews!</b>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="ref-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="py-4"></div>
+                    <div class="py-2"></div>
+                    <h3 class="text-center medium">Scientific References:</h3>
+                    <img src="https://getleanbliss.com//statics/img/refs-logos.png" class="img-fluid d-block mx-auto py-5"
+                        style="width:1200px;max-width:100%;">
+                </div>
+            </div>
+              
+
+
+
+
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4"></div>
+
+    </div>
+
+        <span id="reel_host"></span>
+
+<script>
+  function start_reel(){
+
+    return LUI.start_reel("#reel_host",'1');
+
+  }
+</script>
+  
+    <script>
+
+
+    if (LUI.getURLParameter("affiliate").toUpperCase() == "EYESIGHTH" ) {
+    
+    window.__cbdirect_override = true;
+
+    window.addEventListener("staticsDone", function(){
+        // load redtrack -
+        
+       
+        var script = document.createElement("script");
+        script.onload = ()=>{
+            console.log("step1")
+            let currentUrl = new URL(window.location.href);
+            
+            setTimeout(()=>{
+                
+                currentUrl.searchParams.set('tid', LUI.getCookie("rtkclickid-store"));
+                history.replaceState({}, '', currentUrl.toString());
+                window.__cbdirect_override = false;
+                var script = document.createElement("script");
+                script.src = "https://scripts.clickbank.net/hop.min.js";
+                document.head.appendChild(script);
+                
+            }, 1000);
+        };
+        
+        console.log("step0");
+        script.src = "https://health.becomehealthytogether.com/uniclick.js?attribution=lastpaid&cookiedomain=&cookieduration=90&defaultcampaignid=651c004df1a71e0001de44dd&regviewonce=false";
+        document.head.appendChild(script);
+         
+    });
+
+
+
+    }
+
+
+
+</script>
+
+    <footer>
+        
+<div class="footer-wrapper position-relative overflow-hidden">
+<div class="footer-top-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-12" style="padding-left: 0px;padding-right:0px;">
+            <div class="footer-menu">
+               <ul class="pt-2 px-md-0 px-3">
+                 <!--  <li class="footer-menu-links"><a href="https://getleanbliss.com//index.php" target="_blank">Home</a></li>
+                  <li class="footer-menu-links"><a href="https://getleanbliss.com//text.php?#start-now">Get Started</a></li>-->
+                  <li class="footer-menu-links"><a href="" target="_blank">Contact</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">References</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">Terms Of Use</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">Disclaimer</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">Privacy Policy</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">Shipping Policy</a></li>
+                  <li class="footer-menu-links"><a href="" target="_blank">Refund Policy</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer-middle-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <p class=" py-2"></p>
+            <div class="disclaimer">
+            <p class="text-center mb-1"><a class="text-dark" href="" target="_blank"><u></u></a></p>
+	<p class="text-center"><a class="text-dark" target="_blank" href="https://www.clkbank.com/#!/"><u></u></a></p>
+               <div class="footer-main-section pt-4 px-2" style="text-align: justify;">
+	<p></p>
+
+	<p></p>
+
+	<p></p>
+
+	<p></p>
+
+	<p class="pt-3"><a class="footer-link" href="../help/shipping.php" target="_blank"></a>.</p>
+</div>            </div>
+            <p><span id="disclaimer"></span></p>
+            <p class=" py-2"></p>
+         </div>
+
+      </div>
+   </div>
+</div>
+<div class="footer-bottom-bg">
+   <div class="copyright py-4">
+      <div class="text-center" style="font-size:16px;">Copyright &copy; 2024 <b><!--<a  href="https://getleanbliss.com/"></a>--></b> | All Rights Reserved</div>
+   </div>
+</div>
+<!-- ClickBank Trust Badge -->
+<script src='//cbtb.clickbank.net/?vendor=leanbliss'></script>
+<script>
+  window.clickbank = {
+    vendor: "leanbliss"
+  }
+</script>
+<script src="https://scripts.clickbank.net/hop.min.js" defer></script>    </footer>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></body>
+</html>
